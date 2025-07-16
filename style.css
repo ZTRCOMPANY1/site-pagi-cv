@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base e cores */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Container principal para limitar largura e centralizar */
+body > header,
+body > main,
+body > footer {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #0077cc;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+header address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+header address a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header address a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #0077cc;
+  border-left: 4px solid #0077cc;
+  padding-left: 12px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* Artigos dentro de experiência e educação */
+article {
+  margin-bottom: 18px;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+article time {
+  font-size: 0.9rem;
+  color: #666;
+  margin-right: 10px;
+}
+
+article p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 6px;
+}
+
+/* Lista de habilidades */
+#habilidades ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#habilidades li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body > header,
+  body > main,
+  body > footer {
+    padding: 20px 15px;
+    margin: 0 10px 30px 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
